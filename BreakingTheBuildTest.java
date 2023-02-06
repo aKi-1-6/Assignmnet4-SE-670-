@@ -12,4 +12,10 @@ class BreakingTheBuildTest {
         assertEquals(2, build.calculateDifference(4, 2));
     }
 
+    @Test
+    public void testFailingCases(){
+        BreakingTheBuild build = new BreakingTheBuild();
+        assertNotEquals(3,build.calculateDifference(4,2));
+    }
+
 }
