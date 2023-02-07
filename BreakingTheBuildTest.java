@@ -7,15 +7,15 @@ import static org.junit.jupiter.api.Assertions.*;
 class BreakingTheBuildTest {
 
     @Test
-    public void testCalculateDifference() {
+    public void testSubtraction() {
         BreakingTheBuild build = new BreakingTheBuild();
-        assertEquals(2, build.calculateDifference(4, 2));
+        assertEquals(2, build.subtraction(4, 2));
     }
 
     @Test
-    public void testFailingCases(){
+    public void testSubtractionFailingCases(){
         BreakingTheBuild build = new BreakingTheBuild();
-        assertNotEquals(3,build.calculateDifference(4,2));
+        assertNotEquals(3,build.subtraction(4,2));
     }
 
 }
